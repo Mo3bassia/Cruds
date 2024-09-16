@@ -15,3 +15,7 @@ A simple cruds app
 - **Add Id**: Every product has been added, it get a specific ID
 - **Total Price**: total price has been calculated on every product with (price - discount)
 - **Simple Design**: A simple design with Bootstrap components.
+
+## Live Demo
+
+- [Live Preview Here](https://cruds-mo3bassia.vercel.app)
