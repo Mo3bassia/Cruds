@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cruds Project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>
+          Cruds Project
+          <span class="copyright"
+            >(Made With <span class="heart">❤</span> By Mo3bassia In 2024)</span
+          >
+        </h1>
+      </div>
+    </header>
+    <div class="container">
+      <form action="" class="form mt-5">
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Product Name"
+          func="title"
+          class="form-control given title"
+        />
+        <div class="price-father mt-3">
+          <input
+            type="number"
+            func="price"
+            placeholder="Price"
+            class="form-control given price"
+          />
+          <input
+            type="number"
+            func="discount"
+            name=""
+            id=""
+            class="form-control given discount"
+            placeholder="Discount"
+          />
+        </div>
+        <input
+          type="number"
+          name=""
+          placeholder="Count"
+          class="form-control count mt-3"
+          id=""
+        />
+        <input
+          func="category"
+          type="text"
+          class="form-control given category mt-3"
+          placeholder="Category"
+        />
+        <input
+          type="button"
+          type="button"
+          class="btn btn-primary mt-3 d-block m-auto"
+          id="createBtn"
+          value="Create"
+        />
+        <input
+          type="button"
+          type="button"
+          class="btn btn-warning mt-3 d-block m-auto d-none"
+          id="updateBtn"
+          value="Update"
+        />
+        <input
+          type="text"
+          class="form-control search mt-3"
+          placeholder="Search"
+        />
+        <div class="search-choose choose text-center mt-3">
+          <input
+            type="button"
+            class="btn btn-primary search-title active"
+            value="Search by title"
+          />
+          <input
+            type="button"
+            class="btn btn-primary search-category"
+            value="Search by category"
+          />
+        </div>
+        <div class="view-choose choose text-center mt-3">
+          <input
+            type="button"
+            class="btn btn-primary view-table active"
+            value="View Table"
+          />
+          <input
+            type="button"
+            class="btn btn-primary view-cards"
+            value="View Cards"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn btn-danger delete-all d-block m-auto mt-3"
+        >
+          Delete All <span class="countProducts"></span>
+        </button>
+      </form>
+    </div>
+    <div class="container mt-3">
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>TITLE</td>
+              <td>PRICE</td>
+              <td>DISCOUNT</td>
+              <td>TOTALPRICE</td>
+              <td>CATEGORY</td>
+              <td>UPDATE</td>
+              <td>DELETE</td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="boxes-grid mt-3 d-none"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+:root {
+  --header-background: var(--bs-primary);
+  --inputs-background: var(--bs-dark);
+  --body-background: #fff;
+}
+
+body {
+  background-color: var(--body-background);
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-size: 1.2em;
+  background-color: var(--header-background);
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.price-father {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+form.form * {
+  font-size: 20px;
+}
+
+.table-container {
+  width: 100%;
+  overflow: auto;
+  font-size: 20px;
+}
+
+.table-container .table {
+  min-width: 500px;
+  margin: auto;
+}
+
+.boxes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.boxes-grid .card {
+  padding: 20px;
+}
+
+.boxes-grid .card .card-title {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.boxes-grid .card .card-subtitle:not(:last-of-type) {
+  border-bottom: 2px solid #eee;
+}
+
+.boxes-grid .card .card-subtitle {
+  padding: 10px 0;
+}
+
+.buttons-cont {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+table tr {
+  counter-increment: tr;
+  position: relative;
+}
+
+table tr:before {
+  content: counter(tr);
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+}
+table thead tr:before {
+  opacity: 0;
+}
+
+.active {
+  background-color: var(--bs-primary-text-emphasis);
+}
+
+.copyright {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+span.heart {
+  display: inline-block;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+.card {
+  position: relative;
+  counter-increment: card;
+}
+
+.card:before {
+  content: counter(card);
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: var(--bs-primary);
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
